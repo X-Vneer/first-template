@@ -332,16 +332,21 @@ html {
   background-color: white;
   height: 500px;
 }
-/* @media (max-width: 450px) {
-  .portfoilo .portfoilo-content .card {
-    background-color: white;
-    width: 250px;
-    height: 500px;
-  }
-} */
-.portfoilo .portfoilo-content .card img {
+
+.portfoilo .portfoilo-content .card .image {
+  position: relative;
+  overflow: hidden;
   width: 100%;
 }
+
+.portfoilo .portfoilo-content .card img {
+  width: 100%;
+  transition: all 0.3s;
+}
+.portfoilo .portfoilo-content .card:hover img {
+  transform: scale(1.2) rotate(5deg);
+}
+
 .portfoilo .portfoilo-content .card:nth-child(2) img {
   width: 100%;
   margin: 22% 0;
